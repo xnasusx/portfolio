@@ -1,0 +1,165 @@
+{
+  "$schema": "https://jsonresume.org/schema",
+  "basics": {
+    "name": "Susan Shepard",
+    "label": "Veteran GRC Engineer | Cyber Risk Quantification (FAIR) | AI-Driven Security Automation",
+    "email": "HireSusanShepard@pm.me",
+    "location": {
+      "city": "Boston",
+      "region": "MA",
+      "countryCode": "US"
+    },
+    "url": "https://xnasusx.github.io/portfolio/",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "xnasusx",
+        "url": "https://www.linkedin.com/in/xnasusx/"
+      },
+      {
+        "network": "GitHub",
+        "username": "xnasusx",
+        "url": "https://github.com/xnasusx"
+      },
+      {
+        "network": "Medium",
+        "username": "xnasusx",
+        "url": "https://medium.com/@xnasusx"
+      },
+      {
+        "network": "GRC Engineering Club Boston Chapter",
+        "username": "Susan Shepard",
+        "url": "https://grcengclub.com/chapters/boston#join"
+      }
+    ],
+    "summary": "Veteran GRC engineer who builds platforms that scale compliance, architecting full-stack systems with React, Node.js/Express, and PostgreSQL that automate evidence collection, multi-framework compliance mapping, and FAIR-based quantitative risk scoring. Partners with product and engineering teams to embed AI into GRC workflows and translate technical risk into board-level decisions."
+  },
+  "work": [
+    {
+      "name": "Rapid7",
+      "location": "Boston, MA",
+      "position": "Staff - Trust, Risk, and Compliance Analyst - Information Security",
+      "startDate": "2026-02",
+      "summary": "Architected and engineered GRC, risk, compliance, evidence automation, and AI-assisted risk systems.",
+      "highlights": [
+        "Architected and engineered InsightGRC, an autonomous GRC and continuous control monitoring platform using React/Vite, Node.js/Express, and PostgreSQL on Cloud SQL.",
+        "Built automated import engines, data models, and crosswalk parsers mapping 15+ frameworks including NIST SP 800-53 r5, ISO 27001/27017, PCI-DSS, FedRAMP, GovRAMP, TxRAMP, DORA, NIS2, Cyber Essentials, CSA CCM/CAIQ, and OSCAL.",
+        "Developed a Node.js/Slack Bolt evidence-automation pipeline pulling continuous control evidence from GCP infrastructure, IdPs, EDRs, Google Drive, Jira, and Freshservice.",
+        "Built AI Evidence Scout and rubric assessors to validate evidence sufficiency and score control health.",
+        "Integrated a FAIR-based risk quantification model into an LLM application for contextual risk scoring at scale.",
+        "Authored a Manifest V3 Chrome extension for customer risk assessment questionnaire fulfillment across Archer, OneTrust, and Ombud.",
+        "Built Incident Severity and Findings Management calculators, standardizing cyber-event classification and cutting triage time 40%.",
+        "Directed audit readiness to 100% evidence submission with zero findings."
+      ]
+    },
+    {
+      "name": "Rapid7",
+      "location": "Boston, MA",
+      "position": "Lead Security Risk Analyst",
+      "startDate": "2023-02",
+      "endDate": "2026-02"
+    },
+    {
+      "name": "Rapid7",
+      "location": "Boston, MA",
+      "position": "Lead Security Compliance Analyst",
+      "startDate": "2021-09",
+      "endDate": "2023-02"
+    },
+    {
+      "name": "Seven Bridges, Inc.",
+      "location": "Boston, MA",
+      "position": "Senior Risk and Compliance Analyst",
+      "startDate": "2020-03",
+      "endDate": "2021-09",
+      "highlights": [
+        "Managed 650+ vendors and executed audits for HIPAA, ISO, NIST, SOC, and FedRAMP compliance.",
+        "Negotiated and reviewed security and privacy contracts, enabling $1.5M+ in quarterly bookings.",
+        "Drove 14+ audit assurance activities across security and privacy frameworks."
+      ]
+    },
+    {
+      "name": "Acquia, Inc.",
+      "location": "Boston, MA",
+      "position": "Senior Information Security Analyst",
+      "startDate": "2019-11",
+      "endDate": "2020-03",
+      "highlights": [
+        "Designed and implemented a global GDPR compliance program.",
+        "Managed 900+ vendors with audits against HIPAA, ISO, NIST, SOC, and FedRAMP standards.",
+        "Delivered enterprise-wide audit readiness across security and privacy standards."
+      ]
+    },
+    {
+      "name": "Nuance Communications, Inc.",
+      "location": "Burlington, MA",
+      "position": "Healthcare IT GRC Analyst, Information Security",
+      "startDate": "2017-01",
+      "endDate": "2017-11",
+      "highlights": [
+        "Built a formal security and privacy GRC program for the healthcare division, aligned to HIPAA, HITRUST, ISO, NIST, and SOC 2.",
+        "Reviewed security and privacy contracts, enabling $1.2M+ in quarterly compliant revenue."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Boston University",
+      "area": "Computer Information Systems, Concentration: Security",
+      "studyType": "M.S."
+    },
+    {
+      "institution": "University of Massachusetts Lowell",
+      "area": "Information Technology",
+      "studyType": "B.S.",
+      "score": "magna cum laude"
+    }
+  ],
+  "certificates": [
+    { "name": "Certified Information Security Manager (CISM)", "issuer": "ISACA" },
+    { "name": "Certified in Risk and Information Systems Control (CRISC)", "issuer": "ISACA" },
+    { "name": "Advanced in AI Security Management (AAISM)", "issuer": "ISACA" },
+    { "name": "Advanced in AI Risk (AAIR)", "issuer": "ISACA" },
+    { "name": "Certified in Cybersecurity (CC)", "issuer": "ISC2" },
+    { "name": "AWS Certified Cloud Practitioner (CLF-C02)", "issuer": "AWS" }
+  ],
+  "skills": [
+    {
+      "name": "Risk and Compliance",
+      "keywords": ["Security Risk Management", "FAIR Risk Quantification", "CVSS", "OWASP", "GDPR", "HIPAA", "ISO 27001", "NIST CSF", "SOC 2/3", "FedRAMP", "HITRUST", "EO-14028 Materiality Analysis"]
+    },
+    {
+      "name": "AI and Automation",
+      "keywords": ["LLM integration", "Prompt engineering", "Agentic workflow development", "RAG-based GRC tooling", "Automated risk scoring", "Building with AI"]
+    },
+    {
+      "name": "Engineering",
+      "keywords": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Python", "SQL", "Slack Bolt", "Chrome Extensions", "Docker"]
+    },
+    {
+      "name": "GRC Platforms",
+      "keywords": ["OneTrust", "Archer", "ServiceNow GRC", "AuditBoard"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Hari Seldon Would've Made a Great CISO: What Cyber Risk Analysts Can Learn From Asimov's Foundation",
+      "publisher": "Medium"
+    },
+    {
+      "name": "ISC2 Technical Guidance Paper",
+      "summary": "Co-author and subject matter expert"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "GRC Engineering Club Boston Chapter",
+      "position": "President",
+      "url": "https://grcengclub.com/chapters/boston#join"
+    },
+    {
+      "organization": "Military service",
+      "position": "Veteran"
+    }
+  ]
+}
