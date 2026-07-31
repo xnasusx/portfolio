@@ -10,7 +10,7 @@ Portfolio: https://xnasusx.github.io/portfolio/
 
 Veteran GRC engineer who builds platforms that scale compliance, architecting full-stack systems with React, Node.js/Express, and PostgreSQL that automate evidence collection, multi-framework compliance mapping, and FAIR-based quantitative risk scoring. Partners with product and engineering teams to embed AI into GRC workflows and translate technical risk into board-level decisions.
 
-Focus areas: GRC Engineering Club Boston Chapter President, cyber risk quantification (FAIR), AI-driven security automation, RAG-based GRC tooling, and agentic workflow development.
+Focus areas: President and Founder of the Boston Chapter of the GRC Engineering Club, cyber risk quantification (FAIR), AI-driven security automation, RAG-based GRC tooling, and agentic workflow development.
 
 ## Experience
 
@@ -94,7 +94,7 @@ Backup and Recovery Testing Engineer - Intern, Nov 2015 - May 2016
 - ISC2 Technical Guidance Paper Co-Author and Subject Matter Expert
 - Medium article: "Hari Seldon Would've Made a Great CISO: What Cyber Risk Analysts Can Learn From Asimov's Foundation"
 - Medium profile: https://medium.com/@xnasusx
-- GRC Engineering Club - President, Boston Chapter: https://grcengclub.com/chapters/boston#join
+- GRC Engineering Club - President and Founder, Boston Chapter: https://grcengclub.com/chapters/boston#join
 - ISACA AAISM Beta Tester
 - ISACA AAISM Exam Writing Development Group - Exam Writer
 - Mentoring: Big Brothers Big Sisters, ISACA, and Boston University Admissions
