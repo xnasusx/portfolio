@@ -44,7 +44,7 @@ The portfolio embeds four interactive tools, each of which is also its own stand
 
 ## License
 
-The site **code** — markup, styles, and scripts — is MIT licensed; see [LICENSE](LICENSE).
+The site **code** — markup, styles, and scripts — is licensed under the [GNU AGPL v3 or later](LICENSE).
 
 The **personal content** is not. The résumé, headshot, biography, and written descriptions of my work are © 2026 Susan Shepard, all rights reserved. Please don't reuse them as your own.
 
