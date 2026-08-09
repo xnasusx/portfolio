@@ -1,0 +1,1918 @@
+{
+  "component-definition": {
+    "uuid": "335cf1a4-744e-5c71-a927-3d791b07fa9e",
+    "metadata": {
+      "title": "u dont GRC me - control inventory",
+      "last-modified": "2026-07-30T07:02:39Z",
+      "version": "0.6.1",
+      "oscal-version": "1.1.2",
+      "roles": [
+        {
+          "id": "control-owner",
+          "title": "Control Owner"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "2dd325ab-b707-521a-a2c3-6b34b991ffef",
+          "type": "person",
+          "email-addresses": [
+            "appsec@company.com"
+          ]
+        },
+        {
+          "uuid": "4bb106e9-8c00-539f-a9da-4c1d33625b80",
+          "type": "person",
+          "email-addresses": [
+            "cloud-sec@company.com"
+          ]
+        },
+        {
+          "uuid": "5633ebf5-41e4-5aa8-9fff-a6a3ad7ea6d6",
+          "type": "person",
+          "email-addresses": [
+            "detection@company.com"
+          ]
+        },
+        {
+          "uuid": "36fc6365-5359-521f-8934-5fc49c253dc1",
+          "type": "person",
+          "email-addresses": [
+            "endpoint@company.com"
+          ]
+        },
+        {
+          "uuid": "efef26d7-66b5-537c-8720-ff11528609d6",
+          "type": "person",
+          "email-addresses": [
+            "grc-platform@company.com"
+          ]
+        },
+        {
+          "uuid": "1cb675c1-0450-5dfd-afd7-48f52e265a6b",
+          "type": "person",
+          "email-addresses": [
+            "it-ops@company.com"
+          ]
+        },
+        {
+          "uuid": "deac9e44-f7b6-56c7-a043-042db52620f0",
+          "type": "person",
+          "email-addresses": [
+            "people-sec@company.com"
+          ]
+        },
+        {
+          "uuid": "f66c95e0-1cd0-56a1-82c8-277939d98aed",
+          "type": "person",
+          "email-addresses": [
+            "platform-ops@company.com"
+          ]
+        },
+        {
+          "uuid": "98c6fbfd-0b59-593e-a48f-22917dddb32c",
+          "type": "person",
+          "email-addresses": [
+            "platform-risk@company.com"
+          ]
+        },
+        {
+          "uuid": "fe02eb2e-9f99-5289-ae1a-4ad1e4c7d0ba",
+          "type": "person",
+          "email-addresses": [
+            "resilience@company.com"
+          ]
+        },
+        {
+          "uuid": "5cdb1de4-bc75-5095-ad4f-275026809b18",
+          "type": "person",
+          "email-addresses": [
+            "sec-ops@company.com"
+          ]
+        },
+        {
+          "uuid": "31c89b20-f51d-5d5b-b06b-7d303917801e",
+          "type": "person",
+          "email-addresses": [
+            "vendor-risk@company.com"
+          ]
+        }
+      ],
+      "remarks": "Generated from the u dont GRC me prototype control graph by npm run export:oscal. Prototype data, not an assurance artifact."
+    },
+    "components": [
+      {
+        "uuid": "065bd29b-6350-57db-9c68-cb5dc9ec94dd",
+        "type": "process",
+        "title": "Business Continuity Exercise",
+        "description": "Critical services have documented recovery procedures and tested continuity exercises with tracked remediation.",
+        "purpose": "Corrective control owned by Business Resilience.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-BCP-006",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Resilience",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Corrective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Manual",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "In Progress",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "Medium",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Annual",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "63",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "78",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "66",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "fe02eb2e-9f99-5289-ae1a-4ad1e4c7d0ba"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4df300c3-70fe-53d3-b05a-0bde7c1fb67c",
+        "type": "process",
+        "title": "Centralized Security Logging",
+        "description": "Security-relevant system, identity, and cloud logs are centralized, retained, monitored, and available for investigation.",
+        "purpose": "Detective control owned by Detection Engineering.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-LOG-003",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Detection and Response",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Detective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Continuous",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "90",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "95",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "92",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "5633ebf5-41e4-5aa8-9fff-a6a3ad7ea6d6"
+            ]
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "37e5e26e-e612-53a2-a581-7b3ec522d4b1",
+            "source": "#548fb0c4-f132-5029-8c28-ba7a488ec99a",
+            "description": "Centralized Security Logging as implemented against NIST CSF.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "NISTCSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "NIST CSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "6426d6ef-b520-5f46-aa0f-3dce2f7e8c6e",
+                "control-id": "de.cm-03",
+                "description": "Central logs support monitoring of user and system activity.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "DE.CM-03",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Personnel activity monitoring",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "90",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "91",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "128056c8-de3d-5ed5-908b-7c3d12aaf0e9",
+        "type": "process",
+        "title": "Critical Vulnerability Remediation",
+        "description": "Critical vulnerabilities on internet-facing production assets are remediated or formally risk accepted within SLA.",
+        "purpose": "Corrective control owned by Platform Engineering.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-VULN-004",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Vulnerability Management",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Corrective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Partially Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Degraded",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Daily",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "71",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "86",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "74",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "98c6fbfd-0b59-593e-a48f-22917dddb32c"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#580293b8-bd46-5084-9d88-e4a711fd485f",
+            "rel": "uses",
+            "text": "AWS Security Hub (Production, Internal)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5b2c133f-7c3e-5aae-89a9-d9a0adda21b0",
+            "source": "#4b448218-941c-530b-a718-c4e7fcb55818",
+            "description": "Critical Vulnerability Remediation as implemented against ISO 27001.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "ISO27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "ISO 27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "cfebc9c7-4f0d-5160-ba4c-75bee2d12d81",
+                "control-id": "a.8.8",
+                "description": "Remediation workflow covers vulnerabilities but needs EOL replacement criteria.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "A.8.8",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Management of technical vulnerabilities",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Pending Approval",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "78",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "82",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uuid": "ac3ae948-915e-5af4-bfe3-d1ea00565fc3",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Critical Vulnerability Remediation as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "40207e64-397a-5993-8ea4-3150d8e30d3e",
+                "control-id": "cc7.2",
+                "description": "Security findings are monitored, but SLA misses are currently degraded.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC7.2",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Security monitoring",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Gap",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "70",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "76",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e3073361-3541-5ee3-bcb3-8fb1917e7dc8",
+        "type": "process",
+        "title": "Encryption at Rest",
+        "description": "Sensitive data stores use approved encryption at rest with managed keys and monitored configuration drift.",
+        "purpose": "Preventive control owned by Cloud Security.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-ENC-008",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Data Protection",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Preventive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Continuous",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "97",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "95",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "94",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "4bb106e9-8c00-539f-a9da-4c1d33625b80"
+            ]
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1434ff6f-0931-542f-8ddb-ea1bf9ecfafd",
+            "source": "#4b448218-941c-530b-a718-c4e7fcb55818",
+            "description": "Encryption at Rest as implemented against ISO 27001.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "ISO27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "ISO 27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "3d5daa1b-bbd8-59a2-8667-3134d642b7d1",
+                "control-id": "a.8.24",
+                "description": "Encryption and key controls are continuously checked.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "A.8.24",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Use of cryptography",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "94",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "95",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uuid": "ab6fcede-c384-5122-9eeb-175e7a6477e3",
+            "source": "#354fa0be-4cbf-508e-b8cf-56dfff781d0f",
+            "description": "Encryption at Rest as implemented against PCI DSS.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "PCIDSS",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "PCI DSS",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "b84291c5-896e-5e25-a837-02ca64499985",
+                "control-id": "3.5.1",
+                "description": "Key management coverage is strong but needs PCI-specific custodian evidence.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "3.5.1",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Encryption key management",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "88",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "86",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a49d789a-a854-5972-be28-24a3d3282919",
+        "type": "process",
+        "title": "Endpoint Protection Coverage",
+        "description": "Managed endpoints run approved protection, report health, and automatically create remediation tasks for stale agents.",
+        "purpose": "Detective control owned by Security Operations.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-ENDPOINT-010",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Endpoint Security",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Detective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Degraded",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Daily",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "74",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "92",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "81",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "36fc6365-5359-521f-8934-5fc49c253dc1"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#1a2455c9-fd57-5d75-ae99-7ab3ff702477",
+            "rel": "uses",
+            "text": "CrowdStrike (Production, Internal)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ad95697b-17ec-5f34-9bd9-d681e3d321b0",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Endpoint Protection Coverage as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "4fed86cf-ea26-5fbe-b252-0163746f4ef3",
+                "control-id": "cc7.2",
+                "description": "Endpoint posture is stale on a subset of devices.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC7.2",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Security monitoring",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Gap",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "74",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "81",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c88cd483-f3c7-50c5-8724-1b8620c6ec76",
+        "type": "process",
+        "title": "Identity Lifecycle Review",
+        "description": "Joiner, mover, and leaver access is reviewed against HR source-of-truth and deprovisioning evidence.",
+        "purpose": "Detective control owned by IT Operations.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-IAM-002",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Identity and Access",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Detective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Daily",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "91",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "94",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "89",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "1cb675c1-0450-5dfd-afd7-48f52e265a6b"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#63b89f18-19c7-50b6-9a36-8c66a80badc5",
+            "rel": "uses",
+            "text": "Okta Workforce (Production, Restricted)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9d3499c7-3bc5-5a18-823b-7abb63443ec1",
+            "source": "#ee85bd78-48cc-5265-95e1-27075784ccca",
+            "description": "Identity Lifecycle Review as implemented against HIPAA.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "HIPAA",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "HIPAA",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "7b844718-4cc4-5dd4-9b5e-bdff7821a94a",
+                "control-id": "164.312-a",
+                "description": "Unique workforce identities are linked to access review evidence.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "164.312(a)",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Unique user identification",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "83",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "84",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uuid": "fc0af179-4b00-5c3e-a953-20eee30099ad",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Identity Lifecycle Review as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "6fde369c-be0f-58f5-8372-82be0337e5f8",
+                "control-id": "cc6.2",
+                "description": "Lifecycle reviews remove access when business need ends.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC6.2",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Prior access is removed",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "91",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "93",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7207db77-36ea-51bf-9eb8-48403e6148e2",
+        "type": "process",
+        "title": "Immutable Evidence Retention",
+        "description": "Control evidence is written to object-locked storage with version identifiers, hash validation, retention policy, and graph edge traceability.",
+        "purpose": "Preventive control owned by GRC Platform.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-EVID-007",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Audit Evidence",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Preventive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Continuous",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "94",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "98",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "95",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "efef26d7-66b5-537c-8720-ff11528609d6"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#917d9e3a-2c0b-5fc2-bc28-aa9110315291",
+            "rel": "uses",
+            "text": "S3 Evidence Vault (Production, Restricted)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a61ab2c4-91c5-5bb7-b7e6-7e33c20b7957",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Immutable Evidence Retention as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "682f5c48-a267-5e94-be4c-038befcb1706",
+                "control-id": "cc7.2",
+                "description": "Immutable evidence proves monitoring outcomes and decision traceability.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC7.2",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Security monitoring",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "88",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "90",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4c9d024d-9229-548d-9b78-981fdf0358bf",
+        "type": "process",
+        "title": "Privileged Access Management",
+        "description": "Administrative access to production systems is brokered through a managed vault, requires MFA, and records every privileged session.",
+        "purpose": "Preventive control owned by Security Operations.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-PAM-001",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Identity and Access",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Preventive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Agentic",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "Mission Critical",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Continuous",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "96",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "96",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "93",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "5cdb1de4-bc75-5095-ad4f-275026809b18"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#aa3720b6-a8e1-5b74-a9fd-7760e5ed9834",
+            "rel": "uses",
+            "text": "AWS IAM (Production, Confidential)"
+          },
+          {
+            "href": "#63b89f18-19c7-50b6-9a36-8c66a80badc5",
+            "rel": "uses",
+            "text": "Okta Workforce (Production, Restricted)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fbd37382-7715-55f5-b1bf-14a97796ac0a",
+            "source": "#4b448218-941c-530b-a718-c4e7fcb55818",
+            "description": "Privileged Access Management as implemented against ISO 27001.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "ISO27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "ISO 27001",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "86bc1101-da05-5051-91fb-e17a2038e83b",
+                "control-id": "a.5.16",
+                "description": "Human privileged access is covered; service identities need an explicit subcontrol.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "A.5.16",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Identity management",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Pending Approval",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "86",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "88",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uuid": "30731157-ea42-57ae-ac77-eae632a28d94",
+            "source": "#548fb0c4-f132-5029-8c28-ba7a488ec99a",
+            "description": "Privileged Access Management as implemented against NIST CSF.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "NISTCSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "NIST CSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "34e8e599-b868-5534-bda4-574d08ad8e3c",
+                "control-id": "pr.aa-01",
+                "description": "Identity and credentials are governed through vaulting and MFA.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "PR.AA-01",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Identities are managed",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "92",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "94",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uuid": "5b5aa761-7e8a-50e5-a1e0-34f4a5ff660c",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Privileged Access Management as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "ef4697a8-bb8a-5cb8-b3a3-c784e73458fd",
+                "control-id": "cc6.1",
+                "description": "PAM, MFA, and session recording strongly satisfy logical access requirements.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC6.1",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Logical access security",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "94",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "96",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7498a8bb-1b14-5408-afde-fc6b8016c822",
+        "type": "process",
+        "title": "Production Change Management",
+        "description": "Production changes require approval, linked tickets, testing evidence, and emergency change review.",
+        "purpose": "Directive control owned by Platform Operations.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-CHANGE-009",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Change Management",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Directive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Partially Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "Medium",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Weekly",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "88",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "91",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "87",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "f66c95e0-1cd0-56a1-82c8-277939d98aed"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#ef0e0c73-a463-549a-bd4e-9cf331b23f8f",
+            "rel": "uses",
+            "text": "Jira (Production, Internal)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9a3c6e7b-3ab6-50b4-9ebf-52456a3b02df",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Production Change Management as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "00707fe1-21d7-5952-ab75-cab96d437f00",
+                "control-id": "cc8.1",
+                "description": "Change approvals and linked tickets satisfy change management.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC8.1",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Changes are authorized",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "89",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "92",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "97a89849-480b-51d3-944b-ad6746c22c70",
+        "type": "process",
+        "title": "Protected Production Branches",
+        "description": "Production repositories enforce branch protection, required reviews, and restricted admin bypass.",
+        "purpose": "Preventive control owned by Application Security.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-BRANCH-012",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Secure SDLC",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Preventive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Daily",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "93",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "95",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "92",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "2dd325ab-b707-521a-a2c3-6b34b991ffef"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#af95f1dd-82ee-5e52-afb2-f09b1e946529",
+            "rel": "uses",
+            "text": "GitHub (Production, Confidential)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cd39c4c8-d405-5705-83f1-9d5c31dbdc81",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Protected Production Branches as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "97f2bacf-8c58-5a6a-beef-423c90850c4a",
+                "control-id": "cc8.1",
+                "description": "Branch protections enforce review before production change.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC8.1",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Changes are authorized",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "93",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "94",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c77bf59d-c0e0-580c-9157-8ab9cfd15bcf",
+        "type": "process",
+        "title": "Security Awareness Training",
+        "description": "Employees and privileged users complete security awareness training within policy-defined windows.",
+        "purpose": "Directive control owned by People Security.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-TRAIN-011",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "People Controls",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Directive",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Fully Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "Implemented",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "Medium",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Monthly",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "89",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "87",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "90",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "deac9e44-f7b6-56c7-a043-042db52620f0"
+            ]
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fb804c47-0a81-5f5a-b6e4-1b890ddf83e1",
+            "source": "#02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+            "description": "Security Awareness Training as implemented against SOC 2.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "SOC2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "SOC 2",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "cfe20715-c48d-56a3-be8a-5219452904d3",
+                "control-id": "cc6.1",
+                "description": "Training supports access responsibilities for privileged users.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "CC6.1",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Logical access security",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Active",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "76",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "78",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "19440371-bc71-597f-8c6e-ad55988dbd7e",
+        "type": "process",
+        "title": "Tier 1 Vendor Security Review",
+        "description": "Tier 1 vendors are assessed before onboarding and annually thereafter using SOC 2, security questionnaire, breach history, and data processing scope.",
+        "purpose": "Detective control owned by Third-Party Risk.",
+        "props": [
+          {
+            "name": "control-id",
+            "value": "CTRL-TPRM-002",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-family",
+            "value": "Third-Party Risk",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "control-type",
+            "value": "Detective",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "automation-level",
+            "value": "Partially Automated",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "implementation-status",
+            "value": "In Progress",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "criticality",
+            "value": "High",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "testing-cadence",
+            "value": "Quarterly",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-freshness",
+            "value": "58",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-relevance",
+            "value": "83",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          },
+          {
+            "name": "evidence-completeness",
+            "value": "69",
+            "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "control-owner",
+            "party-uuids": [
+              "31c89b20-f51d-5d5b-b06b-7d303917801e"
+            ]
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "707bb26a-6983-55b5-8e44-533a899e4fa1",
+            "source": "#548fb0c4-f132-5029-8c28-ba7a488ec99a",
+            "description": "Tier 1 Vendor Security Review as implemented against NIST CSF.",
+            "props": [
+              {
+                "name": "framework-id",
+                "value": "NISTCSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              },
+              {
+                "name": "framework-name",
+                "value": "NIST CSF",
+                "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "45900a27-4f11-5d90-859d-bd354d1246d2",
+                "control-id": "gv.sc-06",
+                "description": "Vendor assessment exists; continuous monitoring is not complete.",
+                "props": [
+                  {
+                    "name": "citation",
+                    "value": "GV.SC-06",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "requirement-title",
+                    "value": "Supplier risk response",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-state",
+                    "value": "Pending Approval",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "coverage-percentage",
+                    "value": "66",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  },
+                  {
+                    "name": "mapping-confidence",
+                    "value": "79",
+                    "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "d42537cb-459c-50fe-89ba-52cda1e66f9a",
+          "title": "GDPR EU",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "GDPR",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Privacy",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "ee85bd78-48cc-5265-95e1-27075784ccca",
+          "title": "HIPAA Security Rule",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "HIPAA",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Healthcare",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "4b448218-941c-530b-a718-c4e7fcb55818",
+          "title": "ISO 27001 2022",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "ISO27001",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Security Management",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "c54384bb-4748-5ebd-913c-7e2a6cbb74d4",
+          "title": "ISO 42001 2023",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "ISO42001",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "AI Governance",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "548fb0c4-f132-5029-8c28-ba7a488ec99a",
+          "title": "NIST CSF 2.0",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "NISTCSF",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Cybersecurity",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "354fa0be-4cbf-508e-b8cf-56dfff781d0f",
+          "title": "PCI DSS 4.0",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "PCIDSS",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Payments",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        },
+        {
+          "uuid": "02d688ab-a8ea-502a-95d5-d2fc431a9b1e",
+          "title": "SOC 2 Type II 2026",
+          "props": [
+            {
+              "name": "framework-id",
+              "value": "SOC2",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            },
+            {
+              "name": "category",
+              "value": "Assurance",
+              "ns": "https://xnasusx.github.io/u-dont-grc-me/ns/oscal"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# u dont GRC me
+
+> A control-centric GRC prototype. Controls are the primary source of truth; assets, framework requirements, evidence, risks, vendors, integrations, and AI agent decisions all hang off a control and are explained by traversing to it. React/Vite front end, SQLite locally, a read-only Lambda/DynamoDB Governance API when hosted.
+
+This is a portfolio prototype, not a production assurance platform. The data is seeded demo data. Writes are disabled on the hosted API; they work only against a local `npm run dev:full` instance, behind an optional bearer token.
+
+## Hosted surfaces
+
+- [Application](https://xnasusx.github.io/u-dont-grc-me/): the product itself, primary deployment on GitHub Pages
+- [Portfolio](https://xnasusx.github.io/u-dont-grc-me/portfolio/): recruiter-facing summary of the work
+- [Governance API](https://fvtqz3hs2ohvappyrcya2oats40sodrc.lambda-url.us-east-1.on.aws/api/governance): read-only control graph snapshot, JSON
+- [API health](https://fvtqz3hs2ohvappyrcya2oats40sodrc.lambda-url.us-east-1.on.aws/api/health): hosted API metadata
+
+## Machine-readable artifacts
+
+- [OSCAL component-definition](https://xnasusx.github.io/u-dont-grc-me/oscal/component-definition.json): the control inventory as OSCAL 1.1.2. Each control is a `process` component; each framework mapping is an `implemented-requirement` carrying coverage percentage, mapping confidence, and approval state. UUIDs are RFC 4122 v5 and stable across exports. Regenerate with `npm run export:oscal`.
+
+## Local API
+
+Run `npm run dev:full` for the UI on `http://127.0.0.1:5173` and the API on `http://127.0.0.1:8787`.
+
+- `GET /api/governance`: full snapshot — controls, frameworks, requirements, mappings, assets, policies, evidence, FAIR scenarios and runs, mutation audit log
+- `GET /api/controls/:id`: one control with its mappings, assets, evidence, and policies
+- `PATCH /api/controls/:id`: edit allowlisted control metadata (local only)
+- `GET /api/fair-settings` and `PUT /api/fair-settings/:controlId`: FAIR assumptions
+- `POST /api/fair-simulation-runs/:controlId`: persist a backend-computed Monte Carlo run
+- `GET /api/scf/coverage`: every requirement with the SCF controls that crosswalk to it, plus how many of our controls actively claim it
+- `GET /api/scf/controls/:id`: one Secure Controls Framework control
+
+## Data provenance
+
+- [Secure Controls Framework](https://securecontrolsframework.com) via [GRCEngClub/scf-api](https://github.com/GRCEngClub/scf-api). CC BY-ND; titles and descriptions are reproduced verbatim and never rewritten. Synced by `npm run sync:scf`.
+- [how-to-harden](https://github.com/grcengineering/how-to-harden), MIT. SaaS hardening guides. Synced by `npm run sync:hardening`.
+- [nthpartyfinder](https://github.com/grcengineering/nthpartyfinder), MIT. Nth-party vendor discovery. Synced by `npm run sync:nthparty`.
+
+Full notices in [THIRD-PARTY-NOTICES.md](https://github.com/xnasusx/u-dont-grc-me/blob/main/THIRD-PARTY-NOTICES.md).
+
+## Optional
+
+- [Source repository](https://github.com/xnasusx/u-dont-grc-me)
+- [Implementation plan](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/IMPLEMENTATION_PLAN.md): phase status, evidence, and what is deliberately not built yet
+- [User guide](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/USER_GUIDE.md)
+- [Developer guide](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/DEVELOPER_GUIDE.md)

@@ -1,0 +1,894 @@
+{
+  "attribution": "Secure Controls Framework (SCF) content licensed CC BY-ND by the Secure Controls Framework Council. Titles and descriptions are reproduced verbatim from GRCEngClub/scf-api.",
+  "catalogControlCount": 732,
+  "requirements": [
+    {
+      "requirementId": "REQ-HIPAA-164.312A",
+      "frameworkId": "HIPAA",
+      "frameworkName": "HIPAA",
+      "citation": "164.312(a)",
+      "requirementTitle": "Unique user identification",
+      "matchType": "prefix",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "CFG-02",
+          "title": "Secure Baseline Configurations",
+          "familyName": "Configuration Management",
+          "weight": 10
+        },
+        {
+          "id": "CRY-01",
+          "title": "Use of Cryptographic Controls",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "GOV-02",
+          "title": "Publishing Security, Compliance & Resilience Documentation",
+          "familyName": "Cybersecurity & Data Protection Governance",
+          "weight": 10
+        },
+        {
+          "id": "HRS-02",
+          "title": "Position Categorization",
+          "familyName": "Human Resources Security",
+          "weight": 8
+        },
+        {
+          "id": "HRS-03",
+          "title": "Defined Roles & Responsibilities",
+          "familyName": "Human Resources Security",
+          "weight": 10
+        },
+        {
+          "id": "IAC-01",
+          "title": "Identity & Access Management (IAM)",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-02",
+          "title": "Identification & Authentication for Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-08",
+          "title": "Role-Based Access Control (RBAC)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-09",
+          "title": "Identifier Management (User Names)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-15",
+          "title": "Account Management",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-15.2",
+          "title": "Removal of Temporary / Emergency Accounts",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-15.9",
+          "title": "Emergency Accounts",
+          "familyName": "Identification & Authentication",
+          "weight": 5
+        },
+        {
+          "id": "IAC-21",
+          "title": "Least Privilege",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-25",
+          "title": "Session Termination",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-ISO-A.5.16",
+      "frameworkId": "ISO27001",
+      "frameworkName": "ISO 27001",
+      "citation": "A.5.16",
+      "requirementTitle": "Identity management",
+      "matchType": "exact",
+      "activeMappingCount": 0,
+      "scfControls": [
+        {
+          "id": "IAC-03",
+          "title": "Identification & Authentication for Non-Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-04",
+          "title": "Identification & Authentication for Devices",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-05",
+          "title": "Identification & Authentication for Third-Party Technology Assets, Applications and/or Services (TAAS)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-07",
+          "title": "User Provisioning & De-Provisioning",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-09",
+          "title": "Identifier Management (User Names)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-09.1",
+          "title": "User Identity (ID) Management",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-09.4",
+          "title": "Cross-Organization Management",
+          "familyName": "Identification & Authentication",
+          "weight": 5
+        },
+        {
+          "id": "IAC-15",
+          "title": "Account Management",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-15.3",
+          "title": "Disable Inactive Accounts",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-15.5",
+          "title": "Restrictions on Shared Groups / Accounts",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-ISO-A.8.24",
+      "frameworkId": "ISO27001",
+      "frameworkName": "ISO 27001",
+      "citation": "A.8.24",
+      "requirementTitle": "Use of cryptography",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "CRY-01",
+          "title": "Use of Cryptographic Controls",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-03",
+          "title": "Transmission Confidentiality",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-04",
+          "title": "Transmission Integrity",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-05",
+          "title": "Encrypting Data At Rest",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-09",
+          "title": "Cryptographic Key Management",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-09.3",
+          "title": "Cryptographic Key Loss or Change",
+          "familyName": "Cryptographic Protections",
+          "weight": 8
+        },
+        {
+          "id": "CRY-09.4",
+          "title": "Control & Distribution of Cryptographic Keys",
+          "familyName": "Cryptographic Protections",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-ISO-A.8.8",
+      "frameworkId": "ISO27001",
+      "frameworkName": "ISO 27001",
+      "citation": "A.8.8",
+      "requirementTitle": "Management of technical vulnerabilities",
+      "matchType": "exact",
+      "activeMappingCount": 0,
+      "scfControls": [
+        {
+          "id": "CFG-03.1",
+          "title": "Periodic Review",
+          "familyName": "Configuration Management",
+          "weight": 8
+        },
+        {
+          "id": "CPL-02",
+          "title": "Security, Compliance & Resilience Controls Oversight",
+          "familyName": "Compliance",
+          "weight": 10
+        },
+        {
+          "id": "CPL-03.2",
+          "title": "Functional Review Of Security, Compliance & Resilience Controls",
+          "familyName": "Compliance",
+          "weight": 8
+        },
+        {
+          "id": "IRO-10.3",
+          "title": "Vulnerabilities Related To Incidents",
+          "familyName": "Incident Response",
+          "weight": 8
+        },
+        {
+          "id": "PRI-08",
+          "title": "Personal Data (PD) Control Testing, Training & Monitoring",
+          "familyName": "Data Privacy",
+          "weight": 8
+        },
+        {
+          "id": "VPM-01",
+          "title": "Vulnerability & Patch Management Program (VPMP)",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 9
+        },
+        {
+          "id": "VPM-01.1",
+          "title": "Attack Surface Scope",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 5
+        },
+        {
+          "id": "VPM-02",
+          "title": "Vulnerability Remediation Process",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 10
+        },
+        {
+          "id": "VPM-03",
+          "title": "Vulnerability Ranking",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 8
+        },
+        {
+          "id": "VPM-05",
+          "title": "Software & Firmware Patching",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 10
+        },
+        {
+          "id": "VPM-06",
+          "title": "Vulnerability Scanning",
+          "familyName": "Vulnerability & Patch Management",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-NIST-DE.CM-03",
+      "frameworkId": "NISTCSF",
+      "frameworkName": "NIST CSF",
+      "citation": "DE.CM-03",
+      "requirementTitle": "Personnel activity monitoring",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "MON-01",
+          "title": "Continuous Monitoring",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "MON-16",
+          "title": "Anomalous Behavior",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "MON-16.1",
+          "title": "Insider Threats",
+          "familyName": "Continuous Monitoring",
+          "weight": 8
+        },
+        {
+          "id": "MON-16.3",
+          "title": "Unauthorized Activities",
+          "familyName": "Continuous Monitoring",
+          "weight": 8
+        },
+        {
+          "id": "NET-18",
+          "title": "DNS & Content Filtering",
+          "familyName": "Network Security",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-NIST-GV.SC-06",
+      "frameworkId": "NISTCSF",
+      "frameworkName": "NIST CSF",
+      "citation": "GV.SC-06",
+      "requirementTitle": "Supplier risk response",
+      "matchType": "exact",
+      "activeMappingCount": 0,
+      "scfControls": [
+        {
+          "id": "TPM-01",
+          "title": "Third-Party Management",
+          "familyName": "Third-Party Management",
+          "weight": 10
+        },
+        {
+          "id": "TPM-02",
+          "title": "Third-Party Criticality Assessments",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-03",
+          "title": "Supply Chain Risk Management (SCRM)",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-03.2",
+          "title": "Limit Potential Harm",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-03.3",
+          "title": "Processes To Address Weaknesses or Deficiencies",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-04",
+          "title": "Third-Party Services",
+          "familyName": "Third-Party Management",
+          "weight": 10
+        },
+        {
+          "id": "TPM-04.1",
+          "title": "Third-Party Risk Assessments & Approvals",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-04.3",
+          "title": "Conflict of Interests",
+          "familyName": "Third-Party Management",
+          "weight": 8
+        },
+        {
+          "id": "TPM-04.4",
+          "title": "Third-Party Processing, Storage and Service Locations",
+          "familyName": "Third-Party Management",
+          "weight": 10
+        },
+        {
+          "id": "TPM-05",
+          "title": "Third-Party Contract Requirements",
+          "familyName": "Third-Party Management",
+          "weight": 10
+        },
+        {
+          "id": "TPM-05.2",
+          "title": "Contract Flow-Down Requirements",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-05.3",
+          "title": "Third-Party Authentication Practices",
+          "familyName": "Third-Party Management",
+          "weight": 8
+        },
+        {
+          "id": "TPM-05.4",
+          "title": "Responsible, Accountable, Supportive, Consulted & Informed (RASCI) Matrix",
+          "familyName": "Third-Party Management",
+          "weight": 8
+        },
+        {
+          "id": "TPM-05.5",
+          "title": "Third-Party Scope Review",
+          "familyName": "Third-Party Management",
+          "weight": 10
+        },
+        {
+          "id": "TPM-05.6",
+          "title": "First-Party Declaration (1PD)",
+          "familyName": "Third-Party Management",
+          "weight": 7
+        },
+        {
+          "id": "TPM-05.7",
+          "title": "Break Clauses",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-06",
+          "title": "Third-Party Personnel Security",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        },
+        {
+          "id": "TPM-09",
+          "title": "Third-Party Deficiency Remediation",
+          "familyName": "Third-Party Management",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-NIST-PR.AA-01",
+      "frameworkId": "NISTCSF",
+      "frameworkName": "NIST CSF",
+      "citation": "PR.AA-01",
+      "requirementTitle": "Identities are managed",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "IAC-02",
+          "title": "Identification & Authentication for Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-03",
+          "title": "Identification & Authentication for Non-Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-04",
+          "title": "Identification & Authentication for Devices",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-05",
+          "title": "Identification & Authentication for Third-Party Technology Assets, Applications and/or Services (TAAS)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-PCI-3.5.1",
+      "frameworkId": "PCIDSS",
+      "frameworkName": "PCI DSS",
+      "citation": "3.5.1",
+      "requirementTitle": "Encryption key management",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "DCH-01.2",
+          "title": "Sensitive / Regulated Data Protection",
+          "familyName": "Data Classification & Handling",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-SOC2-CC6.1",
+      "frameworkId": "SOC2",
+      "frameworkName": "SOC 2",
+      "citation": "CC6.1",
+      "requirementTitle": "Logical access security",
+      "matchType": "exact",
+      "activeMappingCount": 2,
+      "scfControls": [
+        {
+          "id": "CRY-01",
+          "title": "Use of Cryptographic Controls",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-03",
+          "title": "Transmission Confidentiality",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-05",
+          "title": "Encrypting Data At Rest",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-08",
+          "title": "Public Key Infrastructure (PKI)",
+          "familyName": "Cryptographic Protections",
+          "weight": 9
+        },
+        {
+          "id": "CRY-09",
+          "title": "Cryptographic Key Management",
+          "familyName": "Cryptographic Protections",
+          "weight": 10
+        },
+        {
+          "id": "CRY-09.1",
+          "title": "Symmetric Keys",
+          "familyName": "Cryptographic Protections",
+          "weight": 9
+        },
+        {
+          "id": "CRY-09.2",
+          "title": "Asymmetric Keys",
+          "familyName": "Cryptographic Protections",
+          "weight": 9
+        },
+        {
+          "id": "IAC-01",
+          "title": "Identity & Access Management (IAM)",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-02",
+          "title": "Identification & Authentication for Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-03",
+          "title": "Identification & Authentication for Non-Organizational Users",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-04",
+          "title": "Identification & Authentication for Devices",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-05",
+          "title": "Identification & Authentication for Third-Party Technology Assets, Applications and/or Services (TAAS)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-08",
+          "title": "Role-Based Access Control (RBAC)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-09",
+          "title": "Identifier Management (User Names)",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-09.1",
+          "title": "User Identity (ID) Management",
+          "familyName": "Identification & Authentication",
+          "weight": 9
+        },
+        {
+          "id": "IAC-10",
+          "title": "Authenticator Management",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-10.8",
+          "title": "Default Authenticators",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-15",
+          "title": "Account Management",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-16",
+          "title": "Privileged Account Management (PAM)",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-20",
+          "title": "Access Enforcement",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-21",
+          "title": "Least Privilege",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "NET-01",
+          "title": "Network Security Controls (NSC)",
+          "familyName": "Network Security",
+          "weight": 10
+        },
+        {
+          "id": "NET-03",
+          "title": "Boundary Protection",
+          "familyName": "Network Security",
+          "weight": 10
+        },
+        {
+          "id": "NET-03.1",
+          "title": "Limit Network Connections",
+          "familyName": "Network Security",
+          "weight": 9
+        },
+        {
+          "id": "NET-04",
+          "title": "Data Flow Enforcement – Access Control Lists (ACLs)",
+          "familyName": "Network Security",
+          "weight": 10
+        },
+        {
+          "id": "NET-05.1",
+          "title": "External System Connections",
+          "familyName": "Network Security",
+          "weight": 8
+        },
+        {
+          "id": "NET-06",
+          "title": "Network Segmentation (macrosegementation)",
+          "familyName": "Network Security",
+          "weight": 10
+        },
+        {
+          "id": "NET-06.1",
+          "title": "Security Management Subnets",
+          "familyName": "Network Security",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-SOC2-CC6.2",
+      "frameworkId": "SOC2",
+      "frameworkName": "SOC 2",
+      "citation": "CC6.2",
+      "requirementTitle": "Prior access is removed",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "IAC-07",
+          "title": "User Provisioning & De-Provisioning",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-07.1",
+          "title": "Change of Roles & Duties",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        },
+        {
+          "id": "IAC-17",
+          "title": "Periodic Review of Account Privileges",
+          "familyName": "Identification & Authentication",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-SOC2-CC7.2",
+      "frameworkId": "SOC2",
+      "frameworkName": "SOC 2",
+      "citation": "CC7.2",
+      "requirementTitle": "Security monitoring",
+      "matchType": "exact",
+      "activeMappingCount": 1,
+      "scfControls": [
+        {
+          "id": "CFG-02.2",
+          "title": "Automated Central Management & Verification",
+          "familyName": "Configuration Management",
+          "weight": 7
+        },
+        {
+          "id": "MON-01",
+          "title": "Continuous Monitoring",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "MON-01.1",
+          "title": "Intrusion Detection & Prevention Systems (IDS & IPS)",
+          "familyName": "Continuous Monitoring",
+          "weight": 9
+        },
+        {
+          "id": "MON-01.2",
+          "title": "Automated Tools for Real-Time Analysis",
+          "familyName": "Continuous Monitoring",
+          "weight": 9
+        },
+        {
+          "id": "MON-01.3",
+          "title": "Inbound & Outbound Communications Traffic",
+          "familyName": "Continuous Monitoring",
+          "weight": 9
+        },
+        {
+          "id": "MON-01.4",
+          "title": "System Generated Alerts",
+          "familyName": "Continuous Monitoring",
+          "weight": 7
+        },
+        {
+          "id": "MON-01.5",
+          "title": "Wireless Network Monitoring",
+          "familyName": "Continuous Monitoring",
+          "weight": 5
+        },
+        {
+          "id": "MON-01.6",
+          "title": "Host-Based Devices",
+          "familyName": "Continuous Monitoring",
+          "weight": 8
+        },
+        {
+          "id": "MON-01.8",
+          "title": "Security Event Monitoring",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "MON-02",
+          "title": "Centralized Collection of Security Event Logs",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "MON-02.1",
+          "title": "Correlate Monitoring Information",
+          "familyName": "Continuous Monitoring",
+          "weight": 9
+        },
+        {
+          "id": "MON-06",
+          "title": "Monitoring Reporting",
+          "familyName": "Continuous Monitoring",
+          "weight": 7
+        },
+        {
+          "id": "MON-16",
+          "title": "Anomalous Behavior",
+          "familyName": "Continuous Monitoring",
+          "weight": 10
+        },
+        {
+          "id": "NET-08.2",
+          "title": "Wireless Intrusion Detection / Prevention Systems (WIDS / WIPS) Deployment",
+          "familyName": "Network Security",
+          "weight": 8
+        },
+        {
+          "id": "OPS-02",
+          "title": "Security Concept Of Operations (CONOPS)",
+          "familyName": "Security Operations",
+          "weight": 9
+        },
+        {
+          "id": "RSK-03",
+          "title": "Risk Identification",
+          "familyName": "Risk Management",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "requirementId": "REQ-SOC2-CC8.1",
+      "frameworkId": "SOC2",
+      "frameworkName": "SOC 2",
+      "citation": "CC8.1",
+      "requirementTitle": "Changes are authorized",
+      "matchType": "exact",
+      "activeMappingCount": 2,
+      "scfControls": [
+        {
+          "id": "CFG-02",
+          "title": "Secure Baseline Configurations",
+          "familyName": "Configuration Management",
+          "weight": 10
+        },
+        {
+          "id": "CFG-02.1",
+          "title": "Reviews & Updates",
+          "familyName": "Configuration Management",
+          "weight": 8
+        },
+        {
+          "id": "CFG-02.2",
+          "title": "Automated Central Management & Verification",
+          "familyName": "Configuration Management",
+          "weight": 7
+        },
+        {
+          "id": "CHG-01",
+          "title": "Change Management Program",
+          "familyName": "Change Management",
+          "weight": 10
+        },
+        {
+          "id": "CHG-02",
+          "title": "Configuration Change Control",
+          "familyName": "Change Management",
+          "weight": 8
+        },
+        {
+          "id": "CHG-02.2",
+          "title": "Test, Validate & Document Changes",
+          "familyName": "Change Management",
+          "weight": 9
+        },
+        {
+          "id": "CHG-05",
+          "title": "Stakeholder Notification of Changes",
+          "familyName": "Change Management",
+          "weight": 9
+        },
+        {
+          "id": "PRM-07",
+          "title": "Secure Development Life Cycle (SDLC) Management",
+          "familyName": "Project & Resource Management",
+          "weight": 10
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "requirements": 12,
+    "resolved": 12,
+    "unresolved": 0,
+    "suggestedControls": 125
+  }
+}
