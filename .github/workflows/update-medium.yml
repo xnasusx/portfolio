@@ -1,0 +1,117 @@
+# Refreshes medium.json in this published repo so the portfolio SPA can read
+# recent posts same-origin. Medium's feed sends no CORS headers, so fetching it
+# from the browser would need a third-party proxy in the page; this avoids that.
+#
+# This file and medium.json are build outputs of nothing — they live only here.
+# scripts/deploy-portfolio.mjs in u-dont-grc-me lists both in PRESERVED so its
+# wipe-and-copy step does not delete them. Renaming either means updating that.
+name: Refresh Medium feed
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch recent Medium posts
+        env:
+          MEDIUM_HANDLE: xnasusx
+          MEDIUM_COUNT: "3"
+          MEDIUM_OUT: medium.json
+        run: |
+          cat > "$RUNNER_TEMP/fetch-medium.mjs" <<'SCRIPT'
+          import { writeFileSync } from "node:fs";
+
+          const HANDLE = process.env.MEDIUM_HANDLE || "xnasusx";
+          const COUNT = Number(process.env.MEDIUM_COUNT || 3);
+          const OUT = process.env.MEDIUM_OUT || "medium.json";
+
+          const decode = (s) =>
+            s
+              .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+              .replace(/&lt;/g, "<")
+              .replace(/&gt;/g, ">")
+              .replace(/&quot;/g, '"')
+              .replace(/&#39;/g, "'")
+              .replace(/&apos;/g, "'")
+              .replace(/&nbsp;/g, " ")
+              .replace(/&amp;/g, "&");
+
+          const tag = (xml, name) => {
+            const m = xml.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`));
+            return m ? decode(m[1]).trim() : "";
+          };
+
+          const firstImage = (html) => {
+            const m = html.match(/<img[^>]+src="([^"]+)"/);
+            return m ? m[1] : null;
+          };
+
+          const excerpt = (html, max = 180) => {
+            const text = decode(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+            if (text.length <= max) return text;
+            return text.slice(0, text.lastIndexOf(" ", max)).trimEnd() + "…";
+          };
+
+          const res = await fetch(`https://medium.com/feed/@${HANDLE}`, {
+            headers: { "User-Agent": "xnasusx-portfolio/1.0 (+https://xnasusx.github.io/portfolio/)" },
+          });
+          if (!res.ok) throw new Error(`Medium feed returned ${res.status} ${res.statusText}`);
+
+          const xml = await res.text();
+          const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
+
+          const posts = items.slice(0, COUNT).map((item) => {
+            const body = tag(item, "content:encoded") || tag(item, "description");
+            const published = tag(item, "pubDate");
+            return {
+              title: tag(item, "title"),
+              url: tag(item, "link").split("?")[0],
+              published: published ? new Date(published).toISOString().slice(0, 10) : null,
+              excerpt: excerpt(body),
+              image: firstImage(body),
+            };
+          });
+
+          if (posts.length === 0) {
+            throw new Error("Medium feed parsed but contained no items; refusing to write an empty file");
+          }
+
+          writeFileSync(
+            OUT,
+            JSON.stringify({ profile: `https://medium.com/@${HANDLE}`, updated: new Date().toISOString(), posts }, null, 2) + "\n",
+          );
+
+          console.log(`Wrote ${OUT} with ${posts.length} post(s).`);
+          SCRIPT
+          node "$RUNNER_TEMP/fetch-medium.mjs"
+
+      - name: Commit when the posts actually changed
+        run: |
+          if git diff --quiet -- medium.json; then
+            echo "No change."
+            exit 0
+          fi
+          # The `updated` stamp moves on every run. Committing that alone would
+          # add a daily no-op commit, so a timestamp-only diff is discarded.
+          substantive=$(git diff -U0 -- medium.json \
+            | grep '^[+-]' | grep -v '^[+-][+-]' \
+            | grep -v '"updated"' || true)
+          if [ -z "$substantive" ]; then
+            echo "Only the timestamp moved; discarding."
+            git checkout -- medium.json
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add medium.json
+          git commit -m "chore: refresh Medium feed"
+          git push
