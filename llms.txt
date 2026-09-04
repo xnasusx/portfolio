@@ -15,9 +15,9 @@ This is a recruiter-facing site, not a production assurance platform.
 
 - [u dont GRC me](https://rootcawsllc.github.io/u-dont-grc-me/): control-centric GRC prototype. Agent index: [llms.txt](https://rootcawsllc.github.io/u-dont-grc-me/llms.txt). Source: [RootCawsLLC/u-dont-grc-me](https://github.com/RootCawsLLC/u-dont-grc-me)
 - [proofplane](https://rootcawsllc.github.io/proofplane/): AI governance control plane that treats a control as held only when an executed attack failed. Source: [RootCawsLLC/proofplane](https://github.com/RootCawsLLC/proofplane)
-- [cui-control-plane](https://github.com/RootCawsLLC/cui-control-plane): one control inventory for a DoD CUI boundary; command-line pipeline, nothing deployed
-- [ksi-harness](https://github.com/RootCawsLLC/ksi-harness): continuous control monitoring for FedRAMP 20x; command-line pipeline, nothing deployed
-- [proofscan](https://github.com/RootCawsLLC/proofscan): layered application flaw scanner; command-line, nothing deployed
+- [cui-control-plane](https://rootcawsllc.github.io/cui-control-plane/): one control inventory for a DoD CUI boundary. Source: [RootCawsLLC/cui-control-plane](https://github.com/RootCawsLLC/cui-control-plane)
+- [ksi-harness](https://rootcawsllc.github.io/ksi-harness/): continuous control monitoring for FedRAMP 20x. Source: [RootCawsLLC/ksi-harness](https://github.com/RootCawsLLC/ksi-harness)
+- [proofscan](https://rootcawsllc.github.io/proofscan/): layered application flaw scanner; live page is the fixture walkthrough. Source: [RootCawsLLC/proofscan](https://github.com/RootCawsLLC/proofscan)
 
 ## Risk lab (GitHub Pages)
 
