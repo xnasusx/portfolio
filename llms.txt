@@ -14,6 +14,7 @@ This is a recruiter-facing site, not a production assurance platform.
 ## Live builds
 
 - [u dont GRC me](https://rootcawsllc.github.io/u-dont-grc-me/): control-centric GRC prototype. Agent index: [llms.txt](https://rootcawsllc.github.io/u-dont-grc-me/llms.txt). Source: [RootCawsLLC/u-dont-grc-me](https://github.com/RootCawsLLC/u-dont-grc-me)
+- [grc-program](https://rootcawsllc.github.io/grc-program/): GRC programme as a git template — fork it, run fixtures, take a private copy before real evidence. Source: [RootCawsLLC/grc-program](https://github.com/RootCawsLLC/grc-program)
 - [proofplane](https://rootcawsllc.github.io/proofplane/): AI governance control plane that treats a control as held only when an executed attack failed. Source: [RootCawsLLC/proofplane](https://github.com/RootCawsLLC/proofplane)
 - [cui-control-plane](https://rootcawsllc.github.io/cui-control-plane/): one control inventory for a DoD CUI boundary. Source: [RootCawsLLC/cui-control-plane](https://github.com/RootCawsLLC/cui-control-plane)
 - [ksi-harness](https://rootcawsllc.github.io/ksi-harness/): continuous control monitoring for FedRAMP 20x. Source: [RootCawsLLC/ksi-harness](https://github.com/RootCawsLLC/ksi-harness)
