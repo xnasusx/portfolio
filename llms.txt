@@ -1,43 +1,31 @@
-# u dont GRC me
+# Susan Shepard — GRC Engineering Portfolio
 
-> A control-centric GRC prototype. Controls are the primary source of truth; assets, framework requirements, evidence, risks, vendors, integrations, and AI agent decisions all hang off a control and are explained by traversing to it. React/Vite front end, SQLite locally, a read-only Lambda/DynamoDB Governance API when hosted.
+> Personal portfolio for FAIR cyber risk quantification, compliance-as-code, and AI-assisted GRC. The page is this site; the code that ships lives under RootCaws LLC.
 
-This is a portfolio prototype, not a production assurance platform. The data is seeded demo data. Writes are disabled on the hosted API; they work only against a local `npm run dev:full` instance, behind an optional bearer token.
+This is a recruiter-facing site, not a production assurance platform.
 
-## Hosted surfaces
+## This site
 
-- [Application](https://xnasusx.github.io/u-dont-grc-me/): the product itself, primary deployment on GitHub Pages
-- [Portfolio](https://xnasusx.github.io/u-dont-grc-me/portfolio/): recruiter-facing summary of the work
-- [Governance API](https://fvtqz3hs2ohvappyrcya2oats40sodrc.lambda-url.us-east-1.on.aws/api/governance): read-only control graph snapshot, JSON
-- [API health](https://fvtqz3hs2ohvappyrcya2oats40sodrc.lambda-url.us-east-1.on.aws/api/health): hosted API metadata
+- [Portfolio](https://xnasusx.github.io/portfolio/): programs, public builds, and the risk lab
+- [Risk lab](https://xnasusx.github.io/portfolio/#/risk-tools): eight interactive tools, embedded from their own repositories
+- [Source (published)](https://github.com/xnasusx/portfolio)
+- [Profile README](https://github.com/xnasusx)
 
-## Machine-readable artifacts
+## Live builds
 
-- [OSCAL component-definition](https://xnasusx.github.io/u-dont-grc-me/oscal/component-definition.json): the control inventory as OSCAL 1.1.2. Each control is a `process` component; each framework mapping is an `implemented-requirement` carrying coverage percentage, mapping confidence, and approval state. UUIDs are RFC 4122 v5 and stable across exports. Regenerate with `npm run export:oscal`.
+- [u dont GRC me](https://rootcawsllc.github.io/u-dont-grc-me/): control-centric GRC prototype. Agent index: [llms.txt](https://rootcawsllc.github.io/u-dont-grc-me/llms.txt). Source: [RootCawsLLC/u-dont-grc-me](https://github.com/RootCawsLLC/u-dont-grc-me)
+- [proofplane](https://rootcawsllc.github.io/proofplane/): AI governance control plane that treats a control as held only when an executed attack failed. Source: [RootCawsLLC/proofplane](https://github.com/RootCawsLLC/proofplane)
+- [cui-control-plane](https://github.com/RootCawsLLC/cui-control-plane): one control inventory for a DoD CUI boundary; command-line pipeline, nothing deployed
+- [ksi-harness](https://github.com/RootCawsLLC/ksi-harness): continuous control monitoring for FedRAMP 20x; command-line pipeline, nothing deployed
+- [proofscan](https://github.com/RootCawsLLC/proofscan): layered application flaw scanner; command-line, nothing deployed
 
-## Local API
+## Risk lab (GitHub Pages)
 
-Run `npm run dev:full` for the UI on `http://127.0.0.1:5173` and the API on `http://127.0.0.1:8787`.
-
-- `GET /api/governance`: full snapshot — controls, frameworks, requirements, mappings, assets, policies, evidence, FAIR scenarios and runs, mutation audit log
-- `GET /api/controls/:id`: one control with its mappings, assets, evidence, and policies
-- `PATCH /api/controls/:id`: edit allowlisted control metadata (local only)
-- `GET /api/fair-settings` and `PUT /api/fair-settings/:controlId`: FAIR assumptions
-- `POST /api/fair-simulation-runs/:controlId`: persist a backend-computed Monte Carlo run
-- `GET /api/scf/coverage`: every requirement with the SCF controls that crosswalk to it, plus how many of our controls actively claim it
-- `GET /api/scf/controls/:id`: one Secure Controls Framework control
-
-## Data provenance
-
-- [Secure Controls Framework](https://securecontrolsframework.com) via [GRCEngClub/scf-api](https://github.com/GRCEngClub/scf-api). CC BY-ND; titles and descriptions are reproduced verbatim and never rewritten. Synced by `npm run sync:scf`.
-- [how-to-harden](https://github.com/grcengineering/how-to-harden), MIT. SaaS hardening guides. Synced by `npm run sync:hardening`.
-- [nthpartyfinder](https://github.com/grcengineering/nthpartyfinder), MIT. Nth-party vendor discovery. Synced by `npm run sync:nthparty`.
-
-Full notices in [THIRD-PARTY-NOTICES.md](https://github.com/xnasusx/u-dont-grc-me/blob/main/THIRD-PARTY-NOTICES.md).
-
-## Optional
-
-- [Source repository](https://github.com/xnasusx/u-dont-grc-me)
-- [Implementation plan](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/IMPLEMENTATION_PLAN.md): phase status, evidence, and what is deliberately not built yet
-- [User guide](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/USER_GUIDE.md)
-- [Developer guide](https://github.com/xnasusx/u-dont-grc-me/blob/main/docs/DEVELOPER_GUIDE.md)
+- [Risk Quantifier](https://rootcawsllc.github.io/risk-quantifier/)
+- [Convergence Lab](https://rootcawsllc.github.io/monte-carlo-demo/)
+- [FAIR Taxonomy Drill](https://rootcawsllc.github.io/fair-model-study/)
+- [Exceedance Workbench](https://rootcawsllc.github.io/loss-exceedance-curve/)
+- [AI Risk Register](https://rootcawsllc.github.io/ai-risk-register/)
+- [Incident Severity](https://rootcawsllc.github.io/incident-severity-calculator/)
+- [Loss Benchmarks](https://rootcawsllc.github.io/risk-benchmarks/)
+- [SEC Materiality](https://rootcawsllc.github.io/cyber-materiality-workbench/)
