@@ -7,7 +7,7 @@ This is a recruiter-facing site, not a production assurance platform.
 ## This site
 
 - [Portfolio](https://xnasusx.github.io/portfolio/): programs, public builds, and the risk lab
-- [Risk lab](https://xnasusx.github.io/portfolio/#/risk-tools): eight interactive tools, embedded from their own repositories
+- [Risk lab](https://xnasusx.github.io/portfolio/#/risk-tools/heatmaps): eight interactive tools; each tab has its own URL
 - [Source (published)](https://github.com/xnasusx/portfolio)
 - [Profile README](https://github.com/xnasusx)
 
@@ -21,11 +21,11 @@ This is a recruiter-facing site, not a production assurance platform.
 
 ## Risk lab (GitHub Pages)
 
-- [Risk Quantifier](https://rootcawsllc.github.io/risk-quantifier/)
-- [Convergence Lab](https://rootcawsllc.github.io/monte-carlo-demo/)
-- [FAIR Taxonomy Drill](https://rootcawsllc.github.io/fair-model-study/)
-- [Exceedance Workbench](https://rootcawsllc.github.io/loss-exceedance-curve/)
-- [AI Risk Register](https://rootcawsllc.github.io/ai-risk-register/)
-- [Incident Severity](https://rootcawsllc.github.io/incident-severity-calculator/)
-- [Loss Benchmarks](https://rootcawsllc.github.io/risk-benchmarks/)
-- [SEC Materiality](https://rootcawsllc.github.io/cyber-materiality-workbench/)
+- [Risk Quantifier](https://xnasusx.github.io/portfolio/#/risk-tools/heatmaps)
+- [Convergence Lab](https://xnasusx.github.io/portfolio/#/risk-tools/monte-carlo)
+- [FAIR Taxonomy Drill](https://xnasusx.github.io/portfolio/#/risk-tools/fair-model)
+- [Exceedance Workbench](https://xnasusx.github.io/portfolio/#/risk-tools/loss-exceedance)
+- [AI Risk Register](https://xnasusx.github.io/portfolio/#/risk-tools/ai-risk-register)
+- [Incident Severity](https://xnasusx.github.io/portfolio/#/risk-tools/incident-severity)
+- [Loss Benchmarks](https://xnasusx.github.io/portfolio/#/risk-tools/benchmarks)
+- [SEC Materiality](https://xnasusx.github.io/portfolio/#/risk-tools/materiality)
